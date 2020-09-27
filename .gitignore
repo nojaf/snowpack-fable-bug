@@ -2,3 +2,8 @@
 build
 web_modules
 node_modules
+.fable
+.idea
+.ionide
+paket-files
+.paket

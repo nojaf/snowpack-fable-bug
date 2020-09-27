@@ -27,3 +27,21 @@ Your app is ready to be deployed!
 ### Q: What about Eject?
 
 No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+
+## Fable
+
+The fsharp script gets compiled to JavaScript (src/bin).
+This happens via Fable (.NET tool).
+
+To get this running:
+
+- Install [.NET SDK](https://dotnet.microsoft.com/download)
+- Run `dotnet tool restore`
+- Run `yarn fsharp` or `yarn fsharp --watch`
+
+## Problem
+
+Changes to the `Moon` component do not update the browser.
+Testable by changing the string `var children$$2 = ["Moon..."];` in `src/bin/script.js`.
+
+This does work for the `Sun` component though.
